@@ -1,0 +1,2 @@
+(function($){"use strict";$('.collapse .mobile_mainmenu li:has(ul)').prepend('<span class="arrow"><i class="flaticon-right-arrow"></i></span>');$("#mmenu_toggle").on('click',function(){$(this).toggleClass("active");if($(this).hasClass("active")){$('.mobile_nav').stop(!0,!0).slideDown()}else{$('.mobile_nav').stop(!0,!0).slideUp()}});$(".mobile_mainmenu > li span.arrow").click(function(){$(this).parent().find("> ul").stop(!0,!0).slideToggle()
+$(this).toggleClass("active")})})(jQuery)
